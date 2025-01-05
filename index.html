@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="pl">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BMI</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <h1>Kalkulator BMI</h1>
+
+                <div class="form-waga">
+                    <label for="waga">Waga (w kg): </label>
+                    <input type="number" id="waga" placeholder="Podaj wagę w kilogramach">
+                </div>
+
+                <div class="form-wzrost">
+                    <label for="wzrost">Wzrost (w cm): </label>
+                    <input type="number" id="wzrost" placeholder="Podaj wagę w centymetrach">
+                </div>
+
+                <button id="oblicz">Oblicz BMI!</button>
+
+                <div id="wynik">
+                    <h3>Wynik: </h3>
+                    <p id="bmi-wart"></p>
+                    <p id="bmi-kat"></p>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+        </body>
+    </html>
