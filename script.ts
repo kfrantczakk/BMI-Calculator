@@ -2,12 +2,13 @@ const wagaInput = document.getElementById("waga") as HTMLInputElement;
 const wzrostInput = document.getElementById("wzrost") as HTMLInputElement;
 const obliczBtn = document.getElementById("oblicz") as HTMLButtonElement;
 const wynikDiv = document.getElementById("wynik") as HTMLDivElement;
-const bmiWart = document.getElementById("bmiWart") as HTMLParagraphElement;
-const bmiKat = document.getElementById("bmiKat") as HTMLParagraphElement;
+const bmiWart = document.getElementById("bmi-wart") as HTMLParagraphElement;
+const bmiKat = document.getElementById("bmi-kat") as HTMLParagraphElement;
 
 //funkcja do obliczenia bmi
 function obliczBmi(waga: number, wzrost: number): number {
-    return waga / (wzrost*wzrost);
+    const wzrostMetry = wzrost / 100;
+    return waga / (wzrostMetry*wzrostMetry);
 }
 
 //funckja do kategorii bmi
